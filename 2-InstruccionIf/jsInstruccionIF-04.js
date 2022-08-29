@@ -1,7 +1,16 @@
+// Pablo Scarrozza
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad;
 
+	edad = document.getElementById("txtIdEdad").value;
 
-}//FIN DE LA FUNCIÓN
+	edad = parseInt(edad);
+	
+	if(edad >= 13 && edad <= 17) {
+		
+		alert("Es adolescente");
+
+	}
+
+}

@@ -1,12 +1,17 @@
+//	Pablo Scarrozza
 /*
 Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
 function mostrar()
 {
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	var genero;
 
+	genero = prompt("ingrese f ó m .");
+	
+	while(!(genero == 'f' || genero == 'm'))
+	{
+		genero = prompt("Sexo incorrecto.");
+	}
 
-
-	txtIdSexo.value=sexoIngresado;
-}//FIN DE LA FUNCIÓN
+	document.getElementById("txtIdSexo").value = genero;
+}

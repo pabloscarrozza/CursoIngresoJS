@@ -1,10 +1,20 @@
+//	Pablo Scarrozza
 /*
 al presionar el botón mostrar 10 repeticiones 
 con números DESCENDENTES, desde el 10 al 1.*/
 function mostrar()
 {
-	var contador;
-	contador=0; 
-	alert('iteración while');
+	var number;
 
-}//FIN DE LA FUNCIÓN
+	number = 11;
+	mensaje = "";
+
+	while(number > 1)
+	{
+		number = number -1;
+		mensaje = mensaje + number + " ";
+	}
+	
+	alert(mensaje);
+	
+}

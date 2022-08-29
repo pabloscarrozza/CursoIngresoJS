@@ -1,6 +1,22 @@
+// Pablo Scarrozza
 function mostrar()
 {
-	var destinoIngresado =txtIdDestino.value;
-	alert(destinoIngresado);
+	var destinoIngresado;
+	var mensaje;
+	
+	destinoIngresado = document.getElementById("txtIdDestino").value;
 
-}//FIN DE LA FUNCIÓN
+	switch(destinoIngresado)
+	{
+		case "Cataratas":
+		case "Mar del plata":
+			mensaje = "Hace calor en este destino.";
+		break;
+			
+		default:
+			mensaje = "Hace frio en este destino.";
+		break;
+	}
+
+	alert(mensaje);
+}

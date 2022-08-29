@@ -1,8 +1,16 @@
+// Pablo Scarrozza
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
-	
+	var edad;
+	var estado;
 
+	edad = document.getElementById("txtIdEdad").value;
+	estado = document.getElementById("estadoCivil").value;
 
-}//FIN DE LA FUNCIÓN
+	edad = parseInt(edad);
+
+	if (edad < 18 && estado != "Soltero")
+	{
+		alert("Es muy pequeño para NO ser soltero");
+	}
+}

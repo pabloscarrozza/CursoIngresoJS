@@ -1,7 +1,15 @@
-function mostrar()
-{
-	//tomo la edad  
-	alert("ok");
-	
+// Pablo Scarrozza
+function mostrar() {
 
-}//FIN DE LA FUNCIÓN
+	var edad;
+
+	edad = document.getElementById("txtIdEdad").value;
+
+	edad = parseInt(edad);
+
+	if (edad >= 18) {
+
+		alert("Es mayor de edad");
+	}
+
+}

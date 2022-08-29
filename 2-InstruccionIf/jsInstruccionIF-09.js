@@ -1,6 +1,15 @@
+// Pablo Scarrozza
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
+	var numeroRandom;
+	var numeroMinimo;
+	var numeroMaximo;
 
-}//FIN DE LA FUNCIÓN
+	numeroMinimo = 1;
+	numeroMaximo = 10;
+
+	numeroRandom = Math.round(Math.random() * (numeroMaximo - numeroMinimo) + numeroMinimo);
+
+	alert(numeroRandom);	
+
+}
